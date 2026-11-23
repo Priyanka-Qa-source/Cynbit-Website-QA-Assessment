@@ -32,6 +32,7 @@ The following areas were checked:
 - Device/layout coverage: Mobile and tablet layout
 - Test period: November 2026
 5. Test Cases and Results
+  
 Test ID	Test Scenario	Expected Result	Actual Result / Observation	Status
 TC01	Open the homepage	Homepage should load successfully	Homepage opened successfully	PASS
 TC02	Click the website logo	User should be taken to the homepage	Logo navigation worked	PASS
