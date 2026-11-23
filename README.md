@@ -1,75 +1,72 @@
-# Cynbit Website – QA Testing Assessment
+# Cynbit Website QA Assessment
 
 ## Project Overview
-This repository contains the manual QA testing assessment of the Cynbit website.
+This repository contains the documentation for a manual quality audit of the Cynbit website, completed as part of the QA Testing Intern assessment.
 
-The objective is to identify functional bugs, UI issues, usability concerns, responsiveness problems, accessibility issues, performance observations and security-related concerns that may affect the user experience.
+| Project detail | Information |
+|---|---|
+| Website | https://www.cynbit.in/ |
+| Assessment | Cynbit Website Quality Audit |
+| Tester | Priyanka |
+| Testing approach | Manual website testing |
+| Test period | November 2026 |
+| Browser | Google Chrome |
+| Device coverage | Android mobile device and tablet layout |
 
-## Testing Objectives
-- Verify website functionality.
-- Identify broken links and buttons.
-- Check form validation.
-- Evaluate UI consistency and usability.
-- Test responsiveness across different screen sizes.
-- Identify accessibility concerns.
-- Observe website performance.
-- Document security-related observations.
+## Repository Contents
+- **[QA Audit Report](QA_Audit_Report.md):** Testing scope, environment, test cases, results, and conclusion.
+- **[Bug & Issue Report](Bug_Issue_Report.md):** Reproduction details, expected and actual results, severity, and priority.
+- **[Improvement Recommendations](Improvement_Recommendations.md):** Suggested improvements based on the testing observations.
 
 ## Testing Scope
-The following testing areas are covered:
-
-1. Functional Testing
-2. UI Testing
-3. Usability Testing
-4. Responsive Testing
-5. Accessibility Testing
-6. Performance Testing
-7. Security Observations
-
-## Test Environment
-
-| Environment | Details |
-|---|---|
-| Browser | Google Chrome |
-| Operating System | Windows / Android |
-| Testing Type | Manual Testing |
-| Devices | Desktop and Mobile |
-| Testing Approach | Exploratory and Functional Testing |
-
-## Repository Structure
-
-- `QA_Audit_Report.md` – Testing methodology, scope and environment.
-- `Bug_Issue_Report.md` – Identified bugs, reproduction steps, severity and priority.
-- `Improvement_Recommendations.md` – Recommendations based on testing observations.
-
-## Testing Methodology
-- Explore the available website pages.
-- Verify navigation and interactive elements.
-- Test forms using valid and invalid inputs.
-- Check different screen sizes.
-- Identify and document issues.
-- Capture screenshots as supporting evidence.
-- Provide recommendations for improvements.
+The assessment covered:
+- Homepage loading and website navigation
+- Logo, header, footer, and call-to-action links
+- Contact form required-field validation
+- Invalid and valid email input
+- Contact form submission and email delivery
+- Long-message and special-character input
+- Mobile and tablet responsiveness
+- Basic keyboard navigation
+- Image loading
+- Browser console observation
+- General page-loading experience
 
 ## Test Results
-Testing Status: In Progress
 
-Total Test Cases: To be updated.
+| Test ID | Test scenario | Result |
+|---|---|---|
+| TC01 | Homepage loading | PASS |
+| TC02 | Website logo navigation | PASS |
+| TC03 | About Us navigation | PASS |
+| TC04 | Services navigation | PASS |
+| TC05 | Products navigation | PASS |
+| TC06 | Contact Us navigation | PASS |
+| TC07 | Empty form validation | PASS |
+| TC08 | Invalid email validation | FAIL |
+| TC09 | Valid email submission and delivery | PASS |
+| TC10 | Mobile responsiveness | PASS |
+| TC11 | Mobile menu navigation | PASS |
+| TC12 | Tablet responsiveness | PASS |
+| TC13 | Basic keyboard navigation | PASS |
+| TC14 | Page-loading performance | OBSERVATION |
+| TC15 | Browser console check | PASS |
+| TC16 | Footer links | PASS |
+| TC17 | Image loading | PASS |
+| TC18 | Join Us and Write Us buttons | PASS |
+| TC19 | Long-message submission | PASS |
+| TC20 | Special characters in message | PASS |
 
-Total Bugs Identified: To be updated.
+### Overall Result
+- **Total test cases:** 20
+- **Passed:** 18
+- **Failed:** 1
+- **Additional observation:** 1 (page loading felt slow)
 
-Passed Test Cases: To be updated.
+The contact form accepted an invalid email value (`priya123`) and displayed a success message. This is documented as a defect because the expected behavior is to reject an invalid email format. Valid form submission and email delivery were verified separately. Long-message and special-character input checks were also completed successfully.
 
-Failed Test Cases: To be updated.
+## Important Testing Notes
+- A successful form-submission message and verified email delivery are recorded as separate checks.
+- The invalid-email issue concerns acceptance of an incorrectly formatted email address; it does not mean the valid-email delivery test failed.
+- The page-loading concern is recorded as an observation, not a confirmed performance defect, because no measured load time or performance audit result was captured.
 
-## Deliverables
-1. QA Audit Report
-2. Bug & Issue Report
-3. Improvement Recommendations
-
-## Conclusion
-This project aims to evaluate the Cynbit website from a user's perspective and provide clear testing observations and actionable recommendations to improve website quality and user experience.
-
----
-
-**Prepared as part of the Cynbit Website QA Testing Assessment.**
